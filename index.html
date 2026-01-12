@@ -33,23 +33,16 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://veridixanalytics.com">
-
+    
     <!-- Favicon -->
-     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
     <!-- Android / PWA -->
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
-
-    <!-- Theme color for mobile browsers -->
-    <meta name="theme-color" content="#00ff88">
-
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -465,7 +458,7 @@
             font-size: 16px;
             line-height: 1.8;
             flex-grow: 1;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         .service-card .btn {
@@ -514,6 +507,7 @@
             color: var(--text-secondary);
             margin: 0;
             font-weight: 600;
+            padding-top: 8px;
         }
 
         /* Service Catalog */
@@ -583,7 +577,7 @@
         }
 
         .catalog-includes {
-            margin: 30px 0;
+            margin: 30px 0 25px 0;
         }
 
         .catalog-includes h4 {
@@ -623,7 +617,7 @@
             background: rgba(0, 255, 136, 0.1);
             padding: 25px;
             border-radius: 12px;
-            margin-top: 30px;
+            margin: 30px 0;
             border-left: 4px solid var(--accent);
         }
 
@@ -642,6 +636,10 @@
             font-weight: 600;
         }
 
+        .catalog-card .btn {
+            margin-top: 30px;
+        }
+
         /* Contact Section */
         .contact-grid {
             display: grid;
@@ -652,7 +650,7 @@
 
         .contact-card {
             background: var(--bg-card);
-            padding: 50px;
+            padding: 50px 40px;
             border-radius: 20px;
             border: 1px solid var(--border);
             text-align: center;
@@ -834,13 +832,12 @@
                 position: fixed;
                 top: 80px;
                 right: -100%;
-                width: 70%;
-                max-width: 320px;
+                width: 280px;
                 height: calc(100vh - 80px);
                 background: rgba(0, 0, 0, 0.98);
                 backdrop-filter: blur(20px);
                 flex-direction: column;
-                padding: 40px 30px;
+                padding: 40px 25px;
                 gap: 25px;
                 transition: right 0.4s ease;
                 border-left: 1px solid var(--border);
@@ -849,6 +846,10 @@
 
             nav ul.active {
                 right: 0;
+            }
+
+            nav a {
+                font-size: 18px;
             }
 
             .hero {
@@ -907,11 +908,11 @@
             .service-card,
             .feature-item,
             .contact-card {
-                padding: 30px 25px;
+                padding: 35px 28px;
             }
 
             .catalog-card {
-                padding: 25px;
+                padding: 35px 28px;
             }
 
             .catalog-title {
@@ -946,9 +947,8 @@
             }
 
             nav ul {
-                width: 85%;
-                max-width: 280px;
-                padding: 30px 20px;
+                width: 260px;
+                padding: 35px 20px;
             }
         }
 

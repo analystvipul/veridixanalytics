@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Veridix Analytics - Business Automation & Data Intelligence | Power BI Consulting Services</title>
+    <meta name="description" content="Veridix Analytics specializes in business automation, data intelligence, and analytics consulting. Power BI dashboards, operations automation, healthcare analytics. Based in Pune, India serving clients globally.">
+    <meta name="keywords" content="Veridix Analytics, business automation, data analytics, Power BI consulting, healthcare analytics, operations automation, data intelligence, business reporting automation, analytics consulting Pune, Power BI dashboards India, business intelligence services, data visualization, automated reporting, analytics solutions, Veridix, data consulting">
+    <meta name="author" content="Veridix Analytics">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Veridix Analytics - Business Automation & Data Intelligence">
+    <meta property="og:description" content="Transform your business with automated analytics systems. Power BI dashboards, operations automation, and healthcare analytics solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veridixanalytics.com">
+    <meta property="og:site_name" content="Veridix Analytics">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Veridix Analytics - Business Automation & Data Intelligence">
+    <meta name="twitter:description" content="Transform your business with automated analytics systems. Power BI consulting and business intelligence solutions.">
+    
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="IN-MH">
+    <meta name="geo.placename" content="Pune">
+    <meta name="geo.position" content="18.5204;73.8567">
+    <meta name="ICBM" content="18.5204, 73.8567">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://veridixanalytics.com">
+
+    <!-- Favicon -->
+     <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Android / PWA -->
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#00ff88">
+
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Veridix Analytics",
+      "image": "https://veridixanalytics.com/logo.png",
+      "description": "Business automation and data intelligence services including Power BI consulting, operations automation, and healthcare analytics.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5204,
+        "longitude": 73.8567
+      },
+      "url": "https://veridixanalytics.com",
+      "telephone": "+91-XXXXXXXXXX",
+      "email": "veridix.analytics@gmail.com",
+      "priceRange": "₹₹",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 18.5204,
+          "longitude": 73.8567
+        },
+        "geoRadius": "Global"
+      },
+      "serviceType": ["Business Automation", "Data Analytics", "Power BI Consulting", "Healthcare Analytics", "Operations Automation"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "50"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #9ca3af;
+            --accent: #00ff88;
+            --accent-glow: rgba(0, 255, 136, 0.3);
+            --border: #1f1f1f;
+            --gradient-1: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Animated Grid Background */
+        .grid-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-image: 
+                linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        /* Gradient Orbs */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.15;
+            z-index: 0;
+            animation: float 15s ease-in-out infinite;
+        }
+
+        .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: var(--accent);
+            top: -250px;
+            right: -250px;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: #00d4ff;
+            bottom: -200px;
+            left: -200px;
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.1); }
+            66% { transform: translate(-30px, 30px) scale(0.9); }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 15px 0;
+            background: rgba(0, 0, 0, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo svg {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+
+        .logo-text {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -1px;
+            line-height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 480px) {
+            .logo svg {
+                height: 38px;
+            }
+            
+            .logo-text {
+                font-size: 24px;
+                line-height: 38px;
+            }
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            font-size: 24px;
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--accent);
+            color: var(--bg-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 150px 0 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 6vw, 72px);
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.8s ease-out;
+            letter-spacing: -2px;
+        }
+
+        .hero .subtitle {
+            font-size: clamp(18px, 3vw, 28px);
+            color: var(--text-primary);
+            margin-bottom: 30px;
+            font-weight: 700;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .hero .description {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+            line-height: 1.8;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid var(--accent);
+            border-radius: 50px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease-out 0.6s backwards;
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            background: rgba(0, 255, 136, 0.15);
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s;
+            border: 2px solid var(--accent);
+            animation: fadeInUp 0.8s ease-out 0.8s backwards;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px var(--accent-glow);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+        }
+
+        .btn-outline:hover {
+            background: var(--accent);
+            color: var(--bg-primary);
+        }
+
+        /* Section */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: clamp(36px, 5vw, 48px);
+            font-weight: 900;
+            margin-bottom: 60px;
+            text-align: center;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 45px;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 60px rgba(0, 255, 136, 0.15);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            font-weight: 800;
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.8;
+            flex-grow: 1;
+            margin-bottom: 25px;
+        }
+
+        .service-card .btn {
+            margin-top: auto;
+            width: fit-content;
+        }
+
+        /* Why Veridix */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 30px;
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .feature-item:hover {
+            border-color: var(--accent);
+            transform: translateX(8px);
+            background: rgba(0, 255, 136, 0.05);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .feature-item p {
+            color: var(--text-secondary);
+            margin: 0;
+            font-weight: 600;
+        }
+
+        /* Service Catalog */
+        .catalog-grid {
+            display: grid;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .catalog-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            border-radius: 24px;
+            padding: 50px;
+            position: relative;
+            transition: all 0.4s;
+            overflow: hidden;
+        }
+
+        .catalog-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 0;
+        }
+
+        .catalog-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0, 255, 136, 0.2);
+        }
+
+        .catalog-card:hover::after {
+            opacity: 0.05;
+        }
+
+        .catalog-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .catalog-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .catalog-title {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .catalog-price {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .catalog-includes {
+            margin: 30px 0;
+        }
+
+        .catalog-includes h4 {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .catalog-includes ul {
+            list-style: none;
+            display: grid;
+            gap: 15px;
+        }
+
+        .catalog-includes li {
+            padding-left: 30px;
+            position: relative;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .catalog-includes li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .catalog-outcome {
+            background: rgba(0, 255, 136, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .catalog-outcome strong {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .catalog-outcome p {
+            color: var(--text-primary);
+            margin: 0;
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .contact-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 255, 136, 0.15);
+        }
+
+        .contact-icon {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        .contact-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .contact-card a:hover {
+            color: var(--text-primary);
+        }
+
+        .contact-card p {
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            padding: 60px 0 30px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo svg {
+            height: 50px;
+            width: auto;
+        }
+
+        .footer-logo-text {
+            font-size: 28px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+            margin-top: 20px;
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 12px;
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--accent-glow);
+        }
+
+        .scroll-top.visible {
+            display: flex;
+        }
+
+        /* Logo Loader */
+        .loader-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .loader-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-content {
+            text-align: center;
+        }
+
+        .loader-logo {
+            display: inline-block;
+            position: relative;
+        }
+
+        .loader-logo svg {
+            width: 150px;
+            height: 150px;
+        }
+
+        /* Animated bars */
+        .loader-bar-1 { animation: barPulse 1.5s ease-in-out infinite 0s; }
+        .loader-bar-2 { animation: barPulse 1.5s ease-in-out infinite 0.1s; }
+        .loader-bar-3 { animation: barPulse 1.5s ease-in-out infinite 0.2s; }
+        .loader-bar-4 { animation: barPulse 1.5s ease-in-out infinite 0.3s; }
+        .loader-bar-5 { animation: barPulse 1.5s ease-in-out infinite 0.2s; }
+        .loader-bar-6 { animation: barPulse 1.5s ease-in-out infinite 0.1s; }
+        .loader-bar-7 { animation: barPulse 1.5s ease-in-out infinite 0s; }
+
+        @keyframes barPulse {
+            0%, 100% { 
+                opacity: 0.3;
+                transform: scaleY(0.7);
+            }
+            50% { 
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+
+        .loader-center {
+            animation: centerPulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes centerPulse {
+            0%, 100% { 
+                opacity: 0.5;
+                transform: scale(0.8);
+            }
+            50% { 
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+        /* Mobile Menu */
+        @media (max-width: 968px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav ul {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                width: 70%;
+                max-width: 320px;
+                height: calc(100vh - 80px);
+                background: rgba(0, 0, 0, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 40px 30px;
+                gap: 25px;
+                transition: right 0.4s ease;
+                border-left: 1px solid var(--border);
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+            }
+
+            nav ul.active {
+                right: 0;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .catalog-card {
+                padding: 30px;
+            }
+
+            .catalog-header {
+                flex-direction: column;
+            }
+
+            .services-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subtitle {
+                font-size: 20px;
+            }
+
+            .hero .description {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            .section-title {
+                font-size: 32px;
+                margin-bottom: 40px;
+            }
+
+            .service-card,
+            .feature-item,
+            .contact-card {
+                padding: 30px 25px;
+            }
+
+            .catalog-card {
+                padding: 25px;
+            }
+
+            .catalog-title {
+                font-size: 24px;
+            }
+
+            .catalog-price {
+                font-size: 24px;
+            }
+
+            .btn {
+                padding: 16px 32px;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .logo svg {
+                height: 32px;
+            }
+            
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            nav ul {
+                width: 85%;
+                max-width: 280px;
+                padding: 30px 20px;
+            }
+        }
+
+        /* Contact Form Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 50px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideUp 0.4s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 32px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: color 0.3s ease;
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: var(--accent);
+        }
+
+        .modal-header {
+            margin-bottom: 30px;
+        }
+
+        .modal-header h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .modal-header p {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 18px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-size: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .form-required {
+            color: var(--accent);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px var(--accent-glow);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .form-success {
+            display: none;
+            padding: 20px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid var(--accent);
+            border-radius: 12px;
+            color: var(--accent);
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 640px) {
+            .modal-content {
+                padding: 35px 25px;
+            }
+
+            .modal-header h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Logo Loader -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(10, 10)">
+                        <rect class="loader-bar-1" x="20" y="60" width="8" height="30" rx="2" fill="#00ff88"/>
+                        <rect class="loader-bar-2" x="32" y="45" width="8" height="45" rx="2" fill="#00ff88"/>
+                        <rect class="loader-bar-3" x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                        <circle class="loader-center" cx="60" cy="95" r="6" fill="#00ff88"/>
+                        <rect class="loader-bar-5" x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                        <rect class="loader-bar-6" x="80" y="45" width="8" height="45" rx="2" fill="#00ff88"/>
+                        <rect class="loader-bar-7" x="92" y="60" width="8" height="30" rx="2" fill="#00ff88"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-background"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <header id="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(10, 10)">
+                            <rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                            <rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <circle cx="60" cy="95" r="6" fill="#00ff88"/>
+                            <rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                        </g>
+                    </svg>
+                    <span class="logo-text">Veridix</span>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <nav>
+                    <ul id="navMenu">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-veridix">Why Veridix</a></li>
+                        <li><a href="#catalog">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="logo.html">Logo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">✦ Specialized expertise in healthcare analytics</div>
+                    <h1>Veridix Analytics</h1>
+                    <p class="subtitle">Business Automation & Data Intelligence</p>
+                    <p class="description">
+                        We help businesses automate operations and transform raw data into actionable intelligence using modern analytics systems.
+                    </p>
+                    <br>
+                    <button onclick="openModal()" class="btn">Book Free Consultation</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Business Reporting Automation</h3>
+                        <p>Automated dashboards. Zero manual work. Real-time KPIs.</p>
+                        <a href="#catalog" class="btn-outline btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Operations Automation</h3>
+                        <p>Smart systems for sales, finance, HR & operations.</p>
+                        <a href="#catalog" class="btn-outline btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Healthcare Analytics</h3>
+                        <p>Advanced reporting for claims, utilization & provider performance.</p>
+                        <a href="#catalog" class="btn-outline btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-veridix" style="background: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title">Why Veridix</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <p><strong>Automation-first delivery</strong></p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🏥</div>
+                        <p><strong>Healthcare domain expertise</strong></p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <p><strong>Fast turnaround (48–72 hours)</strong></p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💰</div>
+                        <p><strong>Fixed monthly pricing</strong></p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <p><strong>Secure data handling</strong></p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🤝</div>
+                        <p><strong>Long-term support</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalog">
+            <div class="container">
+                <h2 class="section-title">Service Catalog</h2>
+                <div class="catalog-grid">
+                    <div class="catalog-card">
+                        <div class="catalog-header">
+                            <h3 class="catalog-title">Business Reporting Automation</h3>
+                            <div class="catalog-price">₹6,000 – ₹10,000/mo</div>
+                        </div>
+                        <div class="catalog-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Excel / CSV / SQL → Power BI dashboards</li>
+                                <li>Automated refresh (daily / weekly)</li>
+                                <li>KPI design</li>
+                                <li>Data cleaning & structuring</li>
+                                <li>1 monthly optimization call</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-outcome">
+                            <strong>Client Outcome:</strong>
+                            <p>Eliminate manual reporting. Real-time visibility.</p>
+                        </div>
+                        <button onclick="openModal()" class="btn">Get Started</button>
+                    </div>
+
+                    <div class="catalog-card">
+                        <div class="catalog-header">
+                            <h3 class="catalog-title">Operations Automation</h3>
+                            <div class="catalog-price">₹10,000 – ₹18,000/mo</div>
+                        </div>
+                        <div class="catalog-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Sales & lead tracking system</li>
+                                <li>Invoice & payment tracking automation</li>
+                                <li>Attendance & productivity dashboards</li>
+                                <li>Workflow automation (Excel + SQL + alerts)</li>
+                                <li>WhatsApp / Email notifications</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-outcome">
+                            <strong>Client Outcome:</strong>
+                            <p>40–60% reduction in admin work.</p>
+                        </div>
+                        <button onclick="openModal()" class="btn">Get Started</button>
+                    </div>
+
+                    <div class="catalog-card">
+                        <div class="catalog-header">
+                            <h3 class="catalog-title">Healthcare Analytics <span style="color: var(--accent);">(Premium)</span></h3>
+                            <div class="catalog-price">₹18,000 – ₹30,000/mo</div>
+                        </div>
+                        <div class="catalog-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Claims dashboards</li>
+                                <li>Utilization management metrics</li>
+                                <li>Provider performance reports</li>
+                                <li>Cost leakage analysis</li>
+                                <li>Custom healthcare KPIs</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-outcome">
+                            <strong>Client Outcome:</strong>
+                            <p>Clinical + financial decision intelligence.</p>
+                        </div>
+                        <button onclick="openModal()" class="btn">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="background: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email Us</h3>
+                        <a href="mailto:veridix.analytics@gmail.com">veridix.analytics@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🌍</div>
+                        <h3>Location</h3>
+                        <p>Pune, India<br>Serving clients globally</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 60px;">
+                    <button onclick="openModal()" class="btn">Schedule Free Consultation</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <h2>Get Started Today</h2>
+                <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+            
+            <div id="successMessage" class="form-success">
+                ✓ Thank you! We'll contact you shortly.
+            </div>
+
+            <form id="contactForm" onsubmit="handleSubmit(event)" action="https://formspree.io/f/xjggvgjy" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name <span class="form-required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span class="form-required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number <span class="form-required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" placeholder="Your company name (optional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Interested In <span class="form-required">*</span></label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="Business Reporting Automation">Business Reporting Automation</option>
+                        <option value="Operations Automation">Operations Automation</option>
+                        <option value="Healthcare Analytics">Healthcare Analytics</option>
+                        <option value="Consultation">General Consultation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell us about your project <span class="form-required">*</span></label>
+                    <textarea id="message" name="message" required placeholder="Describe your requirements, challenges, or questions..."></textarea>
+                </div>
+
+                <!-- Hidden fields for better organization -->
+                <input type="hidden" name="_subject" value="New Consultation Request - Veridix Analytics">
+                <input type="hidden" name="_cc" value="veridix.analytics@gmail.com">
+                <input type="hidden" name="_template" value="table">
+
+                <button type="submit" class="submit-btn" id="submitBtn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(10, 10)">
+                        <rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                        <rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                        <rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                        <circle cx="60" cy="95" r="6" fill="#00ff88"/>
+                        <rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                        <rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                        <rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                    </g>
+                </svg>
+                <span class="footer-logo-text">Veridix Analytics</span>
+            </div>
+            <p>© 2025 Veridix Analytics. All rights reserved.</p>
+            <p>Business Automation & Data Intelligence</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Modal Functions
+        function openModal() {
+            document.getElementById('contactModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('contactModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+            document.getElementById('successMessage').style.display = 'none';
+            document.getElementById('contactForm').reset();
+        }
+
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('contactModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Form Submission Handler
+        async function handleSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const submitBtn = document.getElementById('submitBtn');
+            const formData = new FormData(form);
+
+            // Disable button during submission
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
+
+            try {
+                // Submit to Formspree
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Show success message
+                    document.getElementById('successMessage').style.display = 'block';
+                    form.style.display = 'none';
+
+                    // Also send email notification (backup method)
+                    const emailData = {};
+                    formData.forEach((value, key) => {
+                        emailData[key] = value;
+                    });
+
+                    // Construct mailto link as backup
+                    const subject = encodeURIComponent('New Consultation Request');
+                    const body = encodeURIComponent(
+                        `Name: ${emailData.name}\n` +
+                        `Email: ${emailData.email}\n` +
+                        `Phone: ${emailData.phone}\n` +
+                        `Company: ${emailData.company || 'N/A'}\n` +
+                        `Service: ${emailData.service}\n` +
+                        `Message: ${emailData.message}`
+                    );
+
+                    // Reset after 3 seconds
+                    setTimeout(() => {
+                        closeModal();
+                        form.style.display = 'block';
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Submit Request';
+                    }, 3000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                // Fallback to mailto
+                const emailData = {};
+                formData.forEach((value, key) => {
+                    emailData[key] = value;
+                });
+
+                const subject = encodeURIComponent('New Consultation Request - Veridix Analytics');
+                const body = encodeURIComponent(
+                    `Name: ${emailData.name}\n` +
+                    `Email: ${emailData.email}\n` +
+                    `Phone: ${emailData.phone}\n` +
+                    `Company: ${emailData.company || 'N/A'}\n` +
+                    `Service: ${emailData.service}\n\n` +
+                    `Message:\n${emailData.message}`
+                );
+
+                window.location.href = `mailto:veridix.analytics@gmail.com?subject=${subject}&body=${body}`;
+                
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit Request';
+                
+                alert('Opening your email client to send the request.');
+            }
+        }
+
+        // Hide loader after page loads
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 1500);
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    document.getElementById('navMenu').classList.remove('active');
+                }
+            });
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.service-card, .feature-item, .catalog-card, .contact-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

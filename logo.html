@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veridix Logos - Download All Versions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 42px;
+            background: linear-gradient(135deg, #00ff88, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .logo-card {
+            border: 2px solid #1f1f1f;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .logo-card:hover {
+            border-color: #00ff88;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 255, 136, 0.2);
+        }
+
+        .logo-preview {
+            padding: 60px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 250px;
+        }
+
+        .bg-dark { background: #000000; }
+        .bg-white { background: #ffffff; }
+        .bg-gray { background: #6b7280; }
+        .bg-blue { background: #1e40af; }
+        .bg-purple { background: #6b21a8; }
+        .bg-gradient { background: linear-gradient(135deg, #667eea, #764ba2); }
+
+        .logo-info {
+            padding: 20px;
+            background: #111111;
+            border-top: 1px solid #1f1f1f;
+        }
+
+        .logo-info h3 {
+            margin-bottom: 10px;
+            color: #00ff88;
+            font-size: 18px;
+        }
+
+        .logo-info p {
+            color: #9ca3af;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #00ff88;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: #00cc6a;
+            transform: scale(1.02);
+        }
+
+        .instructions {
+            background: #111111;
+            border: 1px solid #1f1f1f;
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .instructions h2 {
+            color: #00ff88;
+            margin-bottom: 20px;
+        }
+
+        .instructions ul {
+            color: #9ca3af;
+            line-height: 2;
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+        }
+
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Veridix Analytics - Logo Versions</h1>
+        
+        <div class="grid">
+            <!-- Dark Background Version -->
+            <div class="logo-card">
+                <div class="logo-preview bg-dark">
+                    <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                        <g transform="translate(35, 45)">
+                            <rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                            <rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <circle cx="60" cy="95" r="6" fill="#00ff88"/>
+                            <rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                        </g>
+                        <text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text>
+                        <text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#9ca3af" letter-spacing="1">Analytics</text>
+                    </svg>
+                </div>
+                <div class="logo-info">
+                    <h3>Dark Background (Primary)</h3>
+                    <p>Best for website, dark presentations, and digital use</p>
+                    <a href="#" class="download-btn" onclick="downloadSVG('dark', event)">Download PNG</a>
+                </div>
+            </div>
+
+            <!-- White Background Version -->
+            <div class="logo-card">
+                <div class="logo-preview bg-white">
+                    <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                        <g transform="translate(35, 45)">
+                            <rect x="20" y="60" width="8" height="30" rx="2" fill="#00cc6a" opacity="0.6"/>
+                            <rect x="32" y="45" width="8" height="45" rx="2" fill="#00cc6a" opacity="0.8"/>
+                            <rect x="44" y="30" width="8" height="60" rx="2" fill="#00cc6a"/>
+                            <circle cx="60" cy="95" r="6" fill="#00cc6a"/>
+                            <rect x="68" y="30" width="8" height="60" rx="2" fill="#00cc6a"/>
+                            <rect x="80" y="45" width="8" height="45" rx="2" fill="#00cc6a" opacity="0.8"/>
+                            <rect x="92" y="60" width="8" height="30" rx="2" fill="#00cc6a" opacity="0.6"/>
+                        </g>
+                        <text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#000000" letter-spacing="-1">Veridix</text>
+                        <text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#6b7280" letter-spacing="1">Analytics</text>
+                    </svg>
+                </div>
+                <div class="logo-info">
+                    <h3>White Background</h3>
+                    <p>Perfect for print, documents, and light backgrounds</p>
+                    <a href="#" class="download-btn" onclick="downloadSVG('white', event)">Download PNG</a>
+                </div>
+            </div>
+
+            <!-- Gray Background Version -->
+            <div class="logo-card">
+                <div class="logo-preview bg-gray">
+                    <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                        <g transform="translate(35, 45)">
+                            <rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                            <rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <circle cx="60" cy="95" r="6" fill="#00ff88"/>
+                            <rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                        </g>
+                        <text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text>
+                        <text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#e5e7eb" letter-spacing="1">Analytics</text>
+                    </svg>
+                </div>
+                <div class="logo-info">
+                    <h3>Neutral Background</h3>
+                    <p>Versatile for various medium-toned backgrounds</p>
+                    <a href="#" class="download-btn" onclick="downloadSVG('gray', event)">Download PNG</a>
+                </div>
+            </div>
+
+            <!-- Blue Background Version -->
+            <div class="logo-card">
+                <div class="logo-preview bg-blue">
+                    <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                        <g transform="translate(35, 45)">
+                            <rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                            <rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <circle cx="60" cy="95" r="6" fill="#00ff88"/>
+                            <rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                        </g>
+                        <text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text>
+                        <text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#e0f2fe" letter-spacing="1">Analytics</text>
+                    </svg>
+                </div>
+                <div class="logo-info">
+                    <h3>Colored Background (Blue)</h3>
+                    <p>Great for tech presentations and digital platforms</p>
+                    <a href="#" class="download-btn" onclick="downloadSVG('blue', event)">Download PNG</a>
+                </div>
+            </div>
+
+            <!-- Purple Background Version -->
+            <div class="logo-card">
+                <div class="logo-preview bg-purple">
+                    <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                        <g transform="translate(35, 45)">
+                            <rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                            <rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <circle cx="60" cy="95" r="6" fill="#00ff88"/>
+                            <rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/>
+                            <rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/>
+                        </g>
+                        <text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text>
+                        <text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#e9d5ff" letter-spacing="1">Analytics</text>
+                    </svg>
+                </div>
+                <div class="logo-info">
+                    <h3>Colored Background (Purple)</h3>
+                    <p>Creative presentations and marketing materials</p>
+                    <a href="#" class="download-btn" onclick="downloadSVG('purple', event)">Download PNG</a>
+                </div>
+            </div>
+
+            <!-- Gradient Background Version -->
+            <div class="logo-card">
+                <div class="logo-preview bg-gradient">
+                    <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                        <g transform="translate(35, 45)">
+                            <rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.7"/>
+                            <rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.85"/>
+                            <rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <circle cx="60" cy="95" r="6" fill="#00ff88"/>
+                            <rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/>
+                            <rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.85"/>
+                            <rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.7"/>
+                        </g>
+                        <text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text>
+                        <text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#f3e8ff" letter-spacing="1">Analytics</text>
+                    </svg>
+                </div>
+                <div class="logo-info">
+                    <h3>Gradient Background</h3>
+                    <p>Modern look for social media and creative content</p>
+                    <a href="#" class="download-btn" onclick="downloadSVG('gradient', event)">Download PNG</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>📦 Logo Usage Guidelines</h2>
+            <ul>
+                <li><strong>Primary Logo:</strong> Use the dark background version for your website and most digital applications</li>
+                <li><strong>Print Materials:</strong> Use the white background version for business cards, letterheads, and documents</li>
+                <li><strong>Presentations:</strong> Choose the version that contrasts best with your slide background</li>
+                <li><strong>Social Media:</strong> Any version works - pick based on your brand aesthetic</li>
+                <li><strong>Minimum Size:</strong> Don't scale below 120px width to maintain readability</li>
+                <li><strong>Clear Space:</strong> Always maintain padding equal to the height of the icon around the logo</li>
+                <li><strong>File Format:</strong> PNG with transparent background for all uses</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function downloadSVG(type, event) {
+            event.preventDefault();
+            
+            const svgs = {
+                dark: `<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg"><g transform="translate(35, 45)"><rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/><rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/><rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/><circle cx="60" cy="95" r="6" fill="#00ff88"/><rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/><rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/><rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/></g><text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text><text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#9ca3af" letter-spacing="1">Analytics</text></svg>`,
+                
+                white: `<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg"><g transform="translate(35, 45)"><rect x="20" y="60" width="8" height="30" rx="2" fill="#00cc6a" opacity="0.6"/><rect x="32" y="45" width="8" height="45" rx="2" fill="#00cc6a" opacity="0.8"/><rect x="44" y="30" width="8" height="60" rx="2" fill="#00cc6a"/><circle cx="60" cy="95" r="6" fill="#00cc6a"/><rect x="68" y="30" width="8" height="60" rx="2" fill="#00cc6a"/><rect x="80" y="45" width="8" height="45" rx="2" fill="#00cc6a" opacity="0.8"/><rect x="92" y="60" width="8" height="30" rx="2" fill="#00cc6a" opacity="0.6"/></g><text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#000000" letter-spacing="-1">Veridix</text><text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#6b7280" letter-spacing="1">Analytics</text></svg>`,
+                
+                gray: `<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg"><g transform="translate(35, 45)"><rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/><rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/><rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/><circle cx="60" cy="95" r="6" fill="#00ff88"/><rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/><rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/><rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/></g><text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text><text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#e5e7eb" letter-spacing="1">Analytics</text></svg>`,
+                
+                blue: `<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg"><g transform="translate(35, 45)"><rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/><rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/><rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/><circle cx="60" cy="95" r="6" fill="#00ff88"/><rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/><rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/><rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/></g><text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text><text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#e0f2fe" letter-spacing="1">Analytics</text></svg>`,
+                
+                purple: `<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg"><g transform="translate(35, 45)"><rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/><rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/><rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/><circle cx="60" cy="95" r="6" fill="#00ff88"/><rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/><rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.8"/><rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.6"/></g><text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text><text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#e9d5ff" letter-spacing="1">Analytics</text></svg>`,
+                
+                gradient: `<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg"><g transform="translate(35, 45)"><rect x="20" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.7"/><rect x="32" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.85"/><rect x="44" y="30" width="8" height="60" rx="2" fill="#00ff88"/><circle cx="60" cy="95" r="6" fill="#00ff88"/><rect x="68" y="30" width="8" height="60" rx="2" fill="#00ff88"/><rect x="80" y="45" width="8" height="45" rx="2" fill="#00ff88" opacity="0.85"/><rect x="92" y="60" width="8" height="30" rx="2" fill="#00ff88" opacity="0.7"/></g><text x="160" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff" letter-spacing="-1">Veridix</text><text x="160" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#f3e8ff" letter-spacing="1">Analytics</text></svg>`
+            };
+            
+            const svgData = svgs[type];
+            const canvas = document.createElement('canvas');
+            canvas.width = 2400;
+            canvas.height = 600;
+            const ctx = canvas.getContext('2d');
+            
+            const img = new Image();
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0, 2400, 600);
+                canvas.toBlob(function(blob) {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `veridix-logo-${type}.png`;
+                    a.click();
+                    URL.revokeObjectURL(url);
+                });
+            };
+            img.src = 'data:image/svg+xml;base64,' + btoa(svgData);
+        }
+    </script>
+</body>
+</html>
